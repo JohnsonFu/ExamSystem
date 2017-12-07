@@ -1,14 +1,15 @@
 package nju.software.exam.controller;
 
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
-@RestController
+@Controller
 public class MainController {
 
-	@RequestMapping("/hello")
+	@RequestMapping("/")
     public String index() {
-        return "Hello World";
+		
+        return "login";
     }
 	
 }
