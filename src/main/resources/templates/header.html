@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>在线考试支持系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link th:href="@{/css/bootstrap1.css}" rel="stylesheet"/>
+
+    <!-- MetisMenu CSS -->
+    <link th:href="@{/css/metisMenu.min.css}" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link th:href="@{/css/sb-admin-2.css}" rel="stylesheet"/>
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"/> -->
+
+    <!-- Custom Fonts -->
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+
+	<!-- Custom styles for this template -->
+    <link th:href="@{/css/clean-blog.min.css}" rel="stylesheet"/>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" style="background-image: url('img/header.jpg')">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">同学你好</a>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/question">试题</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/question">考试</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/">注销</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- jQuery -->
+    <script th:src="@{/js/jquery.min.js}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script th:src="@{/js/metisMenu.min.js}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script th:src="@{/js/sb-admin-2.js}"></script>
+    
+    <!-- Morris Charts JavaScript -->
+<!--     <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script> -->
+
+</body>
+
+</html>

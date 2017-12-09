@@ -1587,6 +1587,15 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #212529;
+    opacity: 0.5; 
+}
 @media (min-width: 768px) {
   .container {
     width: 750px;
