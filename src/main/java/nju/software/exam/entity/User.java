@@ -9,17 +9,17 @@ public class User implements Serializable{
 	 */
 	private static final long serialVersionUID = 7643579107939486993L;
 	
-	private int id;
+	private Integer id;
 	
 	private String email;
 	
 	private String username;
 	
-	private int role;//0:老师  1：学生
+	private Integer role;//0:老师  1：学生
 	
 	private String password;
 
-	public int getId() {
+	public Integer getId() {
 		return id;
 	}
 
@@ -43,7 +43,7 @@ public class User implements Serializable{
 		this.username = username;
 	}
 
-	public int getRole() {
+	public Integer getRole() {
 		return role;
 	}
 

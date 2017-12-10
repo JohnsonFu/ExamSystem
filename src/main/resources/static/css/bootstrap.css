@@ -238,9 +238,9 @@ th {
   h3 {
     page-break-after: avoid;
   }
-  .navbar {
+/*   .navbar {
     display: none;
-  }
+  } */
   .btn > .caret,
   .dropup > .btn > .caret {
     border-top-color: #000 !important;
@@ -1596,7 +1596,7 @@ pre code {
     background-color: #212529;
     opacity: 0.5; 
 }
-@media (min-width: 768px) {
+/* @media (min-width: 768px) {
   .container {
     width: 750px;
   }
@@ -1610,7 +1610,7 @@ pre code {
   .container {
     width: 1170px;
   }
-}
+} */
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -3629,7 +3629,7 @@ tbody.collapse.in {
   left: auto;
 }
 .dropup .caret,
-.navbar-fixed-bottom .dropdown .caret {
+/* .navbar-fixed-bottom .dropdown .caret {
   content: "";
   border-top: 0;
   border-bottom: 4px dashed;
@@ -3649,7 +3649,7 @@ tbody.collapse.in {
   .navbar-right .dropdown-menu-left {
     right: auto;
     left: 0;
-  }
+  } */
 }
 .btn-group,
 .btn-group-vertical {
@@ -3980,7 +3980,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   z-index: 2;
   margin-left: -1px;
 }
-.nav {
+/* .nav {
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -4698,7 +4698,7 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
-}
+} */
 .breadcrumb {
   padding: 8px 15px;
   margin-bottom: 20px;
@@ -6483,14 +6483,14 @@ button.close {
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:before,
 .btn-group-vertical > .btn-group:after,
-.nav:before,
+/* .nav:before,
 .nav:after,
 .navbar:before,
 .navbar:after,
 .navbar-header:before,
 .navbar-header:after,
 .navbar-collapse:before,
-.navbar-collapse:after,
+.navbar-collapse:after, */
 .pager:before,
 .pager:after,
 .panel-body:before,
@@ -6510,10 +6510,10 @@ button.close {
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
 .btn-group-vertical > .btn-group:after,
-.nav:after,
+/* .nav:after,
 .navbar:after,
 .navbar-header:after,
-.navbar-collapse:after,
+.navbar-collapse:after, */
 .pager:after,
 .panel-body:after,
 .modal-header:after,
