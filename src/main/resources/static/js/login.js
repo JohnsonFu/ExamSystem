@@ -7,8 +7,19 @@ function login(){
 	}
 	$.ajax({
         type: "POST",
-        url:"/",
-        data: data,
-        traditional:true
+        url:"/login",
+//        data: $.param({"email":$("#email").val(),"password":$("#password").val()}),
+//        dataType:json,
+        data:data,
+        success:function(data){
+        	var path = data.path;
+        	window.location.href =path
+        },
+        error:function(XMLHttRequest,textStatus, errorThrown){
+        	alert(XMLHttRequest.responseText);
+//        	alert(XMLHttpRequest.status);
+//        	alert(XMLHttpRequest.readyState);
+//        	alert(textStatus);
+        },
     });
 }

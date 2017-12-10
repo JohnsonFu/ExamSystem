@@ -12,9 +12,30 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class TeacherController {
 
 	@RequestMapping(value="/index",method = RequestMethod.GET)
-    public String getTeacherIndex(Model model,HttpSession session) {
+    public String getTeacherIndexPage(Model model,HttpSession session) {
 		String name = (String) session.getAttribute("name");
 		model.addAttribute("name", name);
 		return "index";
+    }
+	
+	@RequestMapping("/question")
+    public String getQuestionPage(Model model,HttpSession session) {
+		String name = (String) session.getAttribute("name");
+		model.addAttribute("name", name);
+        return "question";
+    }
+	
+	@RequestMapping("/exam")
+    public String getExamSettingPage(Model model,HttpSession session) {		
+		String name = (String) session.getAttribute("name");
+		model.addAttribute("name", name);
+        return "teacher_header";
+    }
+	
+	@RequestMapping("/score")
+    public String getScorePage(Model model,HttpSession session) {		
+		String name = (String) session.getAttribute("name");
+		model.addAttribute("name", name);
+        return "teacher_header";
     }
 }
