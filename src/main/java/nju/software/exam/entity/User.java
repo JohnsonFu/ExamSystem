@@ -19,6 +19,28 @@ public class User implements Serializable{
 	
 	private String password;
 
+	public Integer getGrade() {
+		return grade;
+	}
+
+	public void setGrade(Integer grade) {
+		this.grade = grade;
+	}
+
+
+
+	private Integer grade;//年级
+
+	public Integer getClaSS() {
+		return claSS;
+	}
+
+	public void setClaSS(Integer claSS) {
+		this.claSS = claSS;
+	}
+
+	private Integer claSS;//班级
+
 	public Integer getId() {
 		return id;
 	}
@@ -61,6 +83,10 @@ public class User implements Serializable{
 
 	public static long getSerialversionuid() {
 		return serialVersionUID;
+	}
+
+	public String toString(){
+		return "email:"+email+"--名字:"+username+"--年级："+grade+"--班级:"+claSS;
 	}
 
 }
