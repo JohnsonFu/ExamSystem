@@ -46,7 +46,7 @@ public class MainController {
 				return map;
 			}
 			else {
-				map.put("path", "teacher/index");
+				map.put("path", "student/index");
 				return map;
 			}
 		}       

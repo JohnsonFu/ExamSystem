@@ -104,14 +104,14 @@
                         <div class="panel-body">
                         	<div class="row">
                                 <div class="col-lg-6">
-		                            <form role="form">
+		                            <form role="form" id="question_excel" method="post" enctype="multipart/form-data">
 		                                <div class="form-group">
 		                                    <input type="file"/>
 		                                </div>
 		                            </form>
                             	</div>
                             	<div class="col-lg-6">
-                            		<button type="button" class="btn btn-default" style="float:right">上传文件</button>
+                            		<button type="button" class="btn btn-default" style="float:right" onclick="upload_question()">上传文件</button>
                             	</div>
                             </div>
                         </div>
@@ -134,6 +134,7 @@
     <!-- Custom Theme JavaScript -->
     <script th:src="@{/js/sb-admin-2.js}"></script>
     
+    <script th:src="@{/js/teacher.js}"></script>
     <!-- Morris Charts JavaScript -->
 <!--     <script src="../vendor/raphael/raphael.min.js"></script>
     <script src="../vendor/morrisjs/morris.min.js"></script>

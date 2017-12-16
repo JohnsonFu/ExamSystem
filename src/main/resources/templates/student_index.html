@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <title>在线考试支持系统</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link th:href="@{/css/bootstrap1.css}" rel="stylesheet"/>
+	<link th:href="@{/css/bootstrap.css}" rel="stylesheet"/>
+	
+    <!-- MetisMenu CSS -->
+    <link th:href="@{/css/metisMenu.min.css}" rel="stylesheet"/>
+
+    <!-- Custom CSS -->
+    <link th:href="@{/css/sb-admin-2.css}" rel="stylesheet"/>
+
+    <!-- Morris Charts CSS -->
+    <!-- <link href="../vendor/morrisjs/morris.css" rel="stylesheet"/> -->
+
+    <!-- Custom Fonts -->
+    <link th:href="@{/css/font-awesome.min.css}" rel="stylesheet" type="text/css"/>
+
+	<!-- Custom styles for this template -->
+    <link th:href="@{/css/clean-blog.min.css}" rel="stylesheet"/>
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+	<!-- Navigation -->
+    <!-- <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">              
+                <a class="navbar-brand" style="color:white" href="index.html">在线考试支持系统</a>
+            </div>
+            /.navbar-header
+
+            <ul class="nav navbar-top-links navbar-right">
+                <li class="dropdown">
+                    <a class="navbar-brand" href="index.html">
+                        主页
+                    </a>              
+                </li>
+                /.dropdown
+                <li class="dropdown">
+                    <a class="navbar-brand" href="#">
+                        试题
+                    </a>                   
+                </li>
+                /.dropdown
+                <li class="dropdown">
+                    <a class="navbar-brand" href="#">
+                        考试
+                    </a>                                       
+                </li>
+                /.dropdown
+                <li class="dropdown">
+                    <a class="navbar-brand" href="/">
+                        注销
+                    </a>                  
+                    /.dropdown-user
+                </li>
+                /.dropdown
+            </ul>
+            /.navbar-top-links
+        </nav> -->
+
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" style="font-size: 1.5rem" th:text="${name}+'你好'"></a>       
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" style="font-size: 1.5rem">主页</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/student/exam" style="font-size: 1.5rem">考试</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/" style="font-size: 1.5rem">注销</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+	<!-- Page Header -->
+    <header class="masthead" th:style="'background-image: url('+@{/img/home-bg.jpg}+')'">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>在线考试支持系统</h1>
+              <span class="subheading">自动生成试卷，统计成绩</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    
+    <!-- jQuery -->
+    <script th:src="@{/js/jquery.min.js}"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script th:src="@{/js/bootstrap.min.js}"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script th:src="@{/js/metisMenu.min.js}"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script th:src="@{/js/sb-admin-2.js}"></script>
+    
+    <!-- Morris Charts JavaScript -->
+<!--     <script src="../vendor/raphael/raphael.min.js"></script>
+    <script src="../vendor/morrisjs/morris.min.js"></script>
+    <script src="../data/morris-data.js"></script> -->
+
+</body>
+
+</html>
